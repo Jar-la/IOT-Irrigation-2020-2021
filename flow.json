@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "id": "84967456.67c8c8",
+        "type": "tab",
+        "label": "SimulationCapteurs",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "72526ed7.4690c8",
+        "type": "tab",
+        "label": "ReceptionValeursCapteurs",
+        "disabled": false,
+        "info": ""
+    }
+]
