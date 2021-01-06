@@ -12,5 +12,3062 @@
         "label": "ReceptionValeursCapteurs",
         "disabled": false,
         "info": ""
+    },
+    {
+        "id": "234e1af0.70eade",
+        "type": "tab",
+        "label": "Récupération météo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "a478babd.688008",
+        "type": "tab",
+        "label": "Calculs",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "10f53b23.1e4925",
+        "type": "tab",
+        "label": "UI",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1ebc10b2.05dd67",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "2e866024.63d0c8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Dashboard Irrigation",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 10,
+                "gy": 10,
+                "cx": 6,
+                "cy": 8,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "4d04765f.668058",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "Irrigation",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "fabd1aa3.cd83e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9908e853.44dc",
+        "type": "ui_group",
+        "name": "Contrôle Irrigation",
+        "tab": "fabd1aa3.cd83e",
+        "order": 1,
+        "disp": true,
+        "width": 8,
+        "collapse": false
+    },
+    {
+        "id": "f8fa1a75.0048d",
+        "type": "ui_group",
+        "name": "Configuration Plante",
+        "tab": "fabd1aa3.cd83e",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": true
+    },
+    {
+        "id": "110297fa.d20b28",
+        "type": "ui_group",
+        "name": "Configuration Sol",
+        "tab": "fabd1aa3.cd83e",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "2104039f.bb7a04",
+        "type": "ui_group",
+        "name": "Contrôle Phase Plante",
+        "tab": "fabd1aa3.cd83e",
+        "order": 4,
+        "disp": true,
+        "width": "8",
+        "collapse": true
+    },
+    {
+        "id": "bd818ee2.e64be8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2104039f.bb7a04",
+        "order": 5,
+        "width": 8,
+        "height": 1
+    },
+    {
+        "id": "495842b9.3be76c",
+        "type": "inject",
+        "z": "84967456.67c8c8",
+        "name": "Every 5 minutes ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 220,
+        "wires": [
+            [
+                "5cbf3e66.ac2d98",
+                "2dc95f3e.b3d098"
+            ]
+        ]
+    },
+    {
+        "id": "fd0963da.2421d8",
+        "type": "mqtt out",
+        "z": "84967456.67c8c8",
+        "name": "capteurs",
+        "topic": "capteurs",
+        "qos": "",
+        "retain": "",
+        "broker": "1ebc10b2.05dd67",
+        "x": 1180,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5cbf3e66.ac2d98",
+        "type": "http request",
+        "z": "84967456.67c8c8",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.meteo-concept.com/api/forecast/daily/0?token=e97eb957ce2643059886da3f3b4c114f147949d6222e1da9c66035e539a643a7&insee=64445",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 370,
+        "y": 220,
+        "wires": [
+            [
+                "14c1719f.cc8b2e"
+            ]
+        ]
+    },
+    {
+        "id": "5d8d0bd6.bb75fc",
+        "type": "debug",
+        "z": "84967456.67c8c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "14c1719f.cc8b2e",
+        "type": "json",
+        "z": "84967456.67c8c8",
+        "name": "To JSON",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "4b015922.41ed8"
+            ]
+        ]
+    },
+    {
+        "id": "4b015922.41ed8",
+        "type": "change",
+        "z": "84967456.67c8c8",
+        "name": "Get forecast",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.forecast",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "1b2d82.3497827f"
+            ]
+        ]
+    },
+    {
+        "id": "1b2d82.3497827f",
+        "type": "function",
+        "z": "84967456.67c8c8",
+        "name": "Estimate Fake AIrTemp",
+        "func": "var TempMin = msg.payload.tmin ;\nvar TempMax = msg.payload.tmax ;\nvar temp= Math.floor(Math.random()*(TempMax - TempMin + 1) +TempMin);\nvar newMsg = { payload : {value : temp , sensor : \"AirTemp\"}}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 220,
+        "wires": [
+            [
+                "5d8d0bd6.bb75fc",
+                "fd0963da.2421d8"
+            ]
+        ]
+    },
+    {
+        "id": "f560a2cb.9418f",
+        "type": "mqtt out",
+        "z": "84967456.67c8c8",
+        "name": "capteurs",
+        "topic": "capteurs",
+        "qos": "",
+        "retain": "",
+        "broker": "1ebc10b2.05dd67",
+        "x": 720,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7de68bd1.6a6e24",
+        "type": "debug",
+        "z": "84967456.67c8c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2dc95f3e.b3d098",
+        "type": "function",
+        "z": "84967456.67c8c8",
+        "name": "Fake SoilHum",
+        "func": "var hum =flow.get(\"hummidité\");\nvar newMsg = { payload : {value : hum, sensor : \"SoilHum\"}}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nvar newMsg = { payload : {value : 50 , sensor : \"SoilHum\"}};\nflow.set(\"hummidité\" , 50)\nreturn newMsg;",
+        "finalize": "",
+        "x": 540,
+        "y": 340,
+        "wires": [
+            [
+                "7de68bd1.6a6e24",
+                "f560a2cb.9418f"
+            ]
+        ]
+    },
+    {
+        "id": "fc7c429d.22bde",
+        "type": "comment",
+        "z": "84967456.67c8c8",
+        "name": "Request API Meteo_Concept",
+        "info": "",
+        "x": 420,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "bea57ffe.ef5a5",
+        "type": "comment",
+        "z": "84967456.67c8c8",
+        "name": "Simulation de capteurs qui envoie des message sur un topic mqtt ",
+        "info": "",
+        "x": 250,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6d196683.5a833",
+        "type": "comment",
+        "z": "84967456.67c8c8",
+        "name": "Ils seraient connectés avec LORA à cette raspberryPi ",
+        "info": "",
+        "x": 230,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "be7397ab.47cf68",
+        "type": "comment",
+        "z": "84967456.67c8c8",
+        "name": "Qui serait utilisée comme controleur et Gateway des capteurs",
+        "info": "",
+        "x": 240,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c18cad94.37412",
+        "type": "mqtt in",
+        "z": "72526ed7.4690c8",
+        "name": "",
+        "topic": "capteurs",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1ebc10b2.05dd67",
+        "x": 80,
+        "y": 160,
+        "wires": [
+            [
+                "d11b1397.34af"
+            ]
+        ]
+    },
+    {
+        "id": "95f48991.17cf4",
+        "type": "ui_switch",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "Irriguer Off/On",
+        "tooltip": "",
+        "group": "9908e853.44dc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "966c327f.8c496"
+            ]
+        ],
+        "icon": "font-awesome/fa-tachometer"
+    },
+    {
+        "id": "966c327f.8c496",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "global.set(\"mainOnOff\",msg.payload)\nnewMsg =  { \n    payload : {\n        mainOnOff : global.get(\"mainOnOff\"),\n    }\n};\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "e645f8ba.509cb8"
+            ]
+        ]
+    },
+    {
+        "id": "e645f8ba.509cb8",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d11b1397.34af",
+        "type": "json",
+        "z": "72526ed7.4690c8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 160,
+        "wires": [
+            [
+                "f10018a6.8f6568"
+            ]
+        ]
+    },
+    {
+        "id": "f10018a6.8f6568",
+        "type": "function",
+        "z": "72526ed7.4690c8",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload.value ,\n    measurement : msg.payload.sensor\n    \n}\nreturn newMsg\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 500,
+        "y": 160,
+        "wires": [
+            [
+                "2d0ed2ee.3b0b36",
+                "f6740ddb.4c18e"
+            ]
+        ]
+    },
+    {
+        "id": "f6740ddb.4c18e",
+        "type": "influxdb out",
+        "z": "72526ed7.4690c8",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 770,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "2d0ed2ee.3b0b36",
+        "type": "debug",
+        "z": "72526ed7.4690c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "935bfb43.e97518",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "// Zéro de végétation et Coeficient culturaux en variables globales\nglobal.set(\"Tbase\",msg.payload.Tbase);\n\nglobal.set(\"KcIni\",msg.payload.KcIni);\nglobal.set(\"KcDev\",msg.payload.KcDev);\nglobal.set(\"KcMid\",msg.payload.KcMid);\nglobal.set(\"KcLate\",msg.payload.KcLate);\n\nnewMsg =  { \n    payload : {\n       KcIni : global.get(\"KcIni\"),\n       KcDev : global.get(\"KcDev\"),\n       KcMid : global.get(\"KcMid\"),\n       KcLate : global.get(\"KcLate\"),\n    }\n};\nreturn newMsg\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 140,
+        "wires": [
+            [
+                "3a0628e2.5fe5c"
+            ]
+        ]
+    },
+    {
+        "id": "3a0628e2.5fe5c",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "d8fb4e0a.12a27",
+        "type": "ui_form",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "Propriétés du sol",
+        "group": "110297fa.d20b28",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Humidité au point de flétrissement (en%)",
+                "value": "wp",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Humidité à la capacité au champ (en%)",
+                "value": "fc",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "wp": "",
+            "fc": ""
+        },
+        "payload": "",
+        "submit": "Valider",
+        "cancel": "",
+        "topic": "",
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "c4e82592.69b65",
+                "81733ac.da61dc8"
+            ]
+        ]
+    },
+    {
+        "id": "2c69a0f8.a91a8",
+        "type": "ui_form",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "Propriété plante",
+        "group": "f8fa1a75.0048d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Coefficient cultural phase initiale",
+                "value": "KcIni",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Coefficient cultural phase de développement",
+                "value": "KcDev",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Coefficient cultural Mi-saison",
+                "value": "KcMid",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Coefficient cultural phase maturation",
+                "value": "KcLate",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "KcIni": "",
+            "KcDev": "",
+            "KcMid": "",
+            "KcLate": ""
+        },
+        "payload": "",
+        "submit": "Valider",
+        "cancel": "",
+        "topic": "",
+        "x": 760,
+        "y": 140,
+        "wires": [
+            [
+                "935bfb43.e97518",
+                "2fd9e0f8.825368"
+            ]
+        ]
+    },
+    {
+        "id": "33387fbf.35089",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "f8fa1a75.0048d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Exemple Maïs:",
+        "format": "Init: 1;   dev: 1.20;   mi: 0.60;   matu: 2;",
+        "layout": "col-center",
+        "x": 760,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "81733ac.da61dc8",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "global.set(\"wp\",msg.payload.wp)\nglobal.set(\"fc\",msg.payload.fc)\nglobal.set(\"p\",(msg.payload.fc - msg.payload.wp))\n\nnewMsg =  { \n    payload : {\n       wp : global.get(\"wp\"),\n       fc : global.get(\"fc\"),\n       p : global.get(\"p\")\n    }\n};\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 700,
+        "y": 300,
+        "wires": [
+            [
+                "65a07363.87d6bc"
+            ]
+        ]
+    },
+    {
+        "id": "65a07363.87d6bc",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2fd9e0f8.825368",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 970,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "c4e82592.69b65",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bc4e6c21.8b7378",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "110297fa.d20b28",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Exemple:",
+        "format": "Point de flétrissement:20  Capacité au champ:80",
+        "layout": "col-center",
+        "x": 480,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "23f6a073.c8d59",
+        "type": "comment",
+        "z": "10f53b23.1e4925",
+        "name": "Contrôle irrigation",
+        "info": "",
+        "x": 110,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "45c0e71d.cb8a",
+        "type": "comment",
+        "z": "10f53b23.1e4925",
+        "name": "Configuration Plante ",
+        "info": "",
+        "x": 770,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2260dfb3.a2cb38",
+        "type": "comment",
+        "z": "10f53b23.1e4925",
+        "name": "Configuration Sol ",
+        "info": "",
+        "x": 500,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "eb974f70.8a8de",
+        "type": "ui_switch",
+        "z": "10f53b23.1e4925",
+        "name": "Manuel / Auto",
+        "label": "Manuel / Auto",
+        "tooltip": "En automatique on utilise les degrés jours de croissance pour calculer le stade phénologique de la plante",
+        "group": "2104039f.bb7a04",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "Auto",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "Manuel",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "x": 120,
+        "y": 460,
+        "wires": [
+            [
+                "8a3da3ac.41abc8"
+            ]
+        ]
+    },
+    {
+        "id": "34de0ac5.0f2196",
+        "type": "comment",
+        "z": "10f53b23.1e4925",
+        "name": "Contrôle phase plante",
+        "info": "",
+        "x": 580,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "39d651d9.23001e",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "2104039f.bb7a04",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Phase actuelle",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 520,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "43dbf2e6.32afb4",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "Calcul degrées Jour",
+        "func": "//Calcul degrées Jour\n\n//prendre temp min du jour\nvar tempMin = flow.get(\"minAirTempDay\")\n\n//prendre temp max du jour\nvar tempMax = flow.get(\"maxAirTempDay\")\n\nvar DJ = ( (tempMax + tempMin)/2 ) - global.get(\"Tbase\");\n\nif (DJ > 30){\n    DJ=30;\n}\nif (DJ < 0){\n    DJ = 0;\n}\n\nvar TotDJ = global.get(\"TotDJ\") + DJ;\nglobal.set(\"TotDJ\",TotDJ);\n\nnewMsg =  { \n    payload : {\n        tempMin : tempMin,\n        tempMax : tempMax,\n        DJ : DJ,\n        TotDJ : TotDJ\n    }\n};\n\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set(\"TotDJ\",0);",
+        "finalize": "",
+        "x": 880,
+        "y": 80,
+        "wires": [
+            [
+                "23bf9127.957e1e",
+                "a94ed7e1.5cf18"
+            ]
+        ]
+    },
+    {
+        "id": "3b9fd9a7.4e2dc6",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "Tout les jours a minuit",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 120,
+        "wires": [
+            [
+                "1d5aed86.a2be8a",
+                "69b9507.6524a3"
+            ]
+        ]
+    },
+    {
+        "id": "1d5aed86.a2be8a",
+        "type": "influxdb in",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "Max Air temp",
+        "query": "SELECT max(\"value\") FROM \"AirTemp\" WHERE time >= now() - 24h GROUP BY time(24h) fill(null)",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "e30c4d3b.17267"
+            ]
+        ]
+    },
+    {
+        "id": "69b9507.6524a3",
+        "type": "influxdb in",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "Min Air Temp",
+        "query": "SELECT min(\"value\") FROM \"AirTemp\" WHERE time >= now() - 24h GROUP BY time(24h) fill(null)",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "387db37a.82f64c"
+            ]
+        ]
+    },
+    {
+        "id": "e30c4d3b.17267",
+        "type": "change",
+        "z": "a478babd.688008",
+        "name": "get Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.1.max",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 80,
+        "wires": [
+            [
+                "e808af59.39bb88",
+                "8dc2e438.7921e8"
+            ]
+        ]
+    },
+    {
+        "id": "387db37a.82f64c",
+        "type": "change",
+        "z": "a478babd.688008",
+        "name": "get Value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.1.min",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "6ed5a5c3.2f5afc"
+            ]
+        ]
+    },
+    {
+        "id": "23bf9127.957e1e",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e808af59.39bb88",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "set maxAirTempDay",
+        "func": "if (global.get(\"mainOnOff\")){\n    flow.set(\"maxAirTempDay\" , msg.payload)\n    newMsg =  { \n        payload :{\n            payload :  msg.payload,\n            mmaxAirTempDay : flow.get(\"maxAirTempDay\")\n        }\n    };\n    return newMsg\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 660,
+        "y": 80,
+        "wires": [
+            [
+                "4f9df3da.eaf044",
+                "43dbf2e6.32afb4"
+            ]
+        ]
+    },
+    {
+        "id": "8dc2e438.7921e8",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "4f9df3da.eaf044",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6ed5a5c3.2f5afc",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "set minAirTempDay",
+        "func": "if (global.get(\"mainOnOff\")){\n    flow.set(\"minAirTempDay\" , msg.payload)\n\n    newMsg =  { \n        payload :{\n            payload :  msg.payload,\n            minAirTempDay : flow.get(\"minAirTempDay\")\n        }\n    };\n    return newMsg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 650,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfb0250d.14eca",
+        "type": "influxdb out",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1270,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a94ed7e1.5cf18",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload.DJ ,\n    measurement : \"DJ\"\n    \n}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1060,
+        "y": 80,
+        "wires": [
+            [
+                "f40bab9b.4361f8",
+                "dfb0250d.14eca"
+            ]
+        ]
+    },
+    {
+        "id": "f40bab9b.4361f8",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d4c8009e.c9bc88",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Calcul et injection des degrés jour dans la BD",
+        "info": "",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e091c868.c3ace8",
+        "type": "mqtt out",
+        "z": "84967456.67c8c8",
+        "name": "capteurs",
+        "topic": "capteurs",
+        "qos": "",
+        "retain": "",
+        "broker": "1ebc10b2.05dd67",
+        "x": 700,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "f1f24446.0d741",
+        "type": "debug",
+        "z": "84967456.67c8c8",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "e65a9220.1c97d",
+        "type": "function",
+        "z": "84967456.67c8c8",
+        "name": "Fake IrrigationVolume",
+        "func": "var newMsg = { payload : {value : 5 , sensor : \"IrrigationVolume\"}}\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 480,
+        "y": 480,
+        "wires": [
+            [
+                "f1f24446.0d741",
+                "e091c868.c3ace8"
+            ]
+        ]
+    },
+    {
+        "id": "54fdf169.cc888",
+        "type": "inject",
+        "z": "234e1af0.70eade",
+        "name": "Tout les matin",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "00 06 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 180,
+        "wires": [
+            [
+                "d313dddb.d40f68",
+                "17fbcbc0.1bf544"
+            ]
+        ]
+    },
+    {
+        "id": "d313dddb.d40f68",
+        "type": "http request",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.meteo-concept.com/api/forecast/daily/0?token=e97eb957ce2643059886da3f3b4c114f147949d6222e1da9c66035e539a643a7&insee=64445",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 270,
+        "y": 180,
+        "wires": [
+            [
+                "6c69646.53fbc9c"
+            ]
+        ]
+    },
+    {
+        "id": "6c69646.53fbc9c",
+        "type": "json",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "2303240a.04569c"
+            ]
+        ]
+    },
+    {
+        "id": "2303240a.04569c",
+        "type": "change",
+        "z": "234e1af0.70eade",
+        "name": "Get forecast",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.forecast",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 570,
+        "y": 180,
+        "wires": [
+            [
+                "b278bd9a.7470a8",
+                "b83ac1a6.2a2cf"
+            ]
+        ]
+    },
+    {
+        "id": "b278bd9a.7470a8",
+        "type": "change",
+        "z": "234e1af0.70eade",
+        "name": "get ETP",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.etp",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 180,
+        "wires": [
+            [
+                "ee2e1b1f.fb618",
+                "6f99dea4.7cc528"
+            ]
+        ]
+    },
+    {
+        "id": "b83ac1a6.2a2cf",
+        "type": "change",
+        "z": "234e1af0.70eade",
+        "name": "get rain quantity",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.rr10",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 740,
+        "y": 60,
+        "wires": [
+            [
+                "5d776712.cf4c"
+            ]
+        ]
+    },
+    {
+        "id": "ee2e1b1f.fb618",
+        "type": "function",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload ,\n    measurement : \"Etp\"\n    \n}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 160,
+        "wires": [
+            [
+                "bea5d3af.83df78"
+            ]
+        ]
+    },
+    {
+        "id": "bea5d3af.83df78",
+        "type": "influxdb out",
+        "z": "234e1af0.70eade",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "5d776712.cf4c",
+        "type": "function",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload ,\n    measurement : \"cumulPluieJour\"\n    \n}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 900,
+        "y": 60,
+        "wires": [
+            [
+                "bb510e1d.3581d8"
+            ]
+        ]
+    },
+    {
+        "id": "bb510e1d.3581d8",
+        "type": "influxdb out",
+        "z": "234e1af0.70eade",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "6f99dea4.7cc528",
+        "type": "function",
+        "z": "234e1af0.70eade",
+        "name": "Calcul Etm",
+        "func": "var kc = global.get(\"KcActuel\");\nif (isNaN(kc)){\n    kc = KcIni\n}\nvar Etm = kc * msg.payload\n\nvar newMsg = { \n    payload : Etm ,\n    measurement : \"Etm\"\n    \n}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 910,
+        "y": 240,
+        "wires": [
+            [
+                "e417e1d8.fa3778",
+                "f1aa981.3e448e8"
+            ]
+        ]
+    },
+    {
+        "id": "52020560.b654f4",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "Calcul et set KcActuel",
+        "func": "if (global.get(\"mainOnOff\")){\n    if (global.get(\"PhaseActuelle\")  == \"initiale\"){\n        KcIni = global.get(\"KcIni\");\n        global.set(\"KcActuel\" , KcIni)\n    }else if (global.get(\"PhaseActuelle\")  == \"développement\"){\n        KcDev = global.get(\"KcDev\");\n        global.set(\"KcActuel\" , KcDev)\n    }else if (global.get(\"PhaseActuelle\")  == \"mi-saison\"){\n        KcMid = global.get(\"KcMid\");\n        global.set(\"KcActuel\" , KcMid)\n    }else if (global.get(\"PhaseActuelle\")  == \"maturation\"){\n        KcLate = global.get(\"KcLate\");\n        global.set(\"KcActuel\" , KcLate)\n    }\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set(\"KcActuel\",global.get(\"KcIni\") );",
+        "finalize": "",
+        "x": 320,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13e1c9f1.85afee",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Calcul Kc actuel",
+        "info": "",
+        "x": 100,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "e417e1d8.fa3778",
+        "type": "influxdb out",
+        "z": "234e1af0.70eade",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1150,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "975f7993.58e198",
+        "type": "comment",
+        "z": "234e1af0.70eade",
+        "name": "Get usefull forecast data",
+        "info": "",
+        "x": 160,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "200de522.5cbf1a",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Calcul facteur stress hydrique",
+        "info": "",
+        "x": 140,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "455586ba.fcf198",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "toutes les5 minutes",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "4ec43a24.259a84"
+            ]
+        ]
+    },
+    {
+        "id": "4ec43a24.259a84",
+        "type": "influxdb in",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "Get last SoilHum value",
+        "query": "SELECT * FROM SoilHum GROUP BY * ORDER BY DESC LIMIT 1",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 360,
+        "y": 400,
+        "wires": [
+            [
+                "569c2753.23ff78",
+                "77baa986.9cbf58"
+            ]
+        ]
+    },
+    {
+        "id": "569c2753.23ff78",
+        "type": "change",
+        "z": "a478babd.688008",
+        "name": "get only value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.0.value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "2368807f.373bd8"
+            ]
+        ]
+    },
+    {
+        "id": "2368807f.373bd8",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "Ks calculation",
+        "func": "if (global.get(\"mainOnOff\")){\n    var s = msg.payload;    \n    s = s/100;\n    var wp = global.get(\"wp\");\n    wp = wp /100;\n    var fc = global.get(\"fc\");\n    fc = fc/100;\n    var p = global.get(\"p\");\n    p = p /100;\n\n    Ks = ( (s-wp) / ( (1-p) * (fc-wp)));\n\n    newMsg =  { \n        payload : {\n            s : s,\n            wp : wp,\n            fc : fc,\n            p : p,\n            Ks : Ks\n        }\n    };\n    return newMsg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 740,
+        "y": 400,
+        "wires": [
+            [
+                "62433829.2a9e38",
+                "84211087.88955"
+            ]
+        ]
+    },
+    {
+        "id": "62433829.2a9e38",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6af71a2c.ef0cb4",
+        "type": "inject",
+        "z": "84967456.67c8c8",
+        "name": "For testing ",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 300,
+        "y": 340,
+        "wires": [
+            [
+                "2dc95f3e.b3d098"
+            ]
+        ]
+    },
+    {
+        "id": "84211087.88955",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload.Ks ,\n    measurement : \"Ks\"\n    \n}\nglobal.set(\"latestKs\", msg.payload.Ks)\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 400,
+        "wires": [
+            [
+                "16870363.1bad65",
+                "92ff5b50.377fc"
+            ]
+        ]
+    },
+    {
+        "id": "92ff5b50.377fc",
+        "type": "influxdb out",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1210,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "16870363.1bad65",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "180e8dab.343e0a",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Calcul indice humidité du sol",
+        "info": "",
+        "x": 140,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e8618b8e.d5ee88",
+        "type": "influxdb in",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "Get last SoilHum value",
+        "query": "SELECT * FROM SoilHum GROUP BY * ORDER BY DESC LIMIT 1",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 360,
+        "y": 500,
+        "wires": [
+            [
+                "567270a8.852ca8"
+            ]
+        ]
+    },
+    {
+        "id": "567270a8.852ca8",
+        "type": "change",
+        "z": "a478babd.688008",
+        "name": "get only value",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.0.value",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 500,
+        "wires": [
+            [
+                "54dadb56.97b91c"
+            ]
+        ]
+    },
+    {
+        "id": "54dadb56.97b91c",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "swi calculation",
+        "func": "if (global.get(\"mainOnOff\")){\n    var s = msg.payload;    \n    s = s/100;\n    var wp = global.get(\"wp\");\n    wp = wp /100;\n    var fc = global.get(\"fc\");\n    fc = fc/100;\n\n    swi  = ( (s-wp) / (fc-wp) );\n\n    newMsg =  { \n        payload : {\n            s : s,\n            wp : wp,\n            fc : fc,\n            swi  : swi \n        }\n    };\n    flow.set( \"swi\", swi);\n    return newMsg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 740,
+        "y": 500,
+        "wires": [
+            [
+                "5431c0ab.c5b9e",
+                "f03bc5f.b258838"
+            ]
+        ]
+    },
+    {
+        "id": "5431c0ab.c5b9e",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 950,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f03bc5f.b258838",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "",
+        "func": "var newMsg = { \n    payload : msg.payload.swi ,\n    measurement : \"swi\"\n}\n\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 960,
+        "y": 500,
+        "wires": [
+            [
+                "c2f83e24.1cc56",
+                "134232.4d3b2dcf"
+            ]
+        ]
+    },
+    {
+        "id": "134232.4d3b2dcf",
+        "type": "influxdb out",
+        "z": "a478babd.688008",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1210,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "c2f83e24.1cc56",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f1aa981.3e448e8",
+        "type": "function",
+        "z": "234e1af0.70eade",
+        "name": "calcul Etr",
+        "func": "var ks = global.get(\"latestKs\");\nvar Etm = msg.payload\nvar Etr = ks * Etm;\n\nvar newMsg = { \n    payload : Etr ,\n    measurement : \"Etr\"\n    \n}\nreturn newMsg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1040,
+        "y": 340,
+        "wires": [
+            [
+                "7fc70c33.9ffa1c"
+            ]
+        ]
+    },
+    {
+        "id": "b7976998.a72b88",
+        "type": "comment",
+        "z": "234e1af0.70eade",
+        "name": "Etp : Evapotranspiration potentiel",
+        "info": "",
+        "x": 970,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "c52db4d.f4c5d48",
+        "type": "comment",
+        "z": "234e1af0.70eade",
+        "name": "Etm : Evapotranspiration maximale",
+        "info": "",
+        "x": 980,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a39ae67f.cb3ca8",
+        "type": "comment",
+        "z": "234e1af0.70eade",
+        "name": "Etr: Evapotranspiration réelle",
+        "info": "",
+        "x": 1140,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7fc70c33.9ffa1c",
+        "type": "influxdb out",
+        "z": "234e1af0.70eade",
+        "influxdb": "4d04765f.668058",
+        "name": "",
+        "measurement": "",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "organisation",
+        "bucket": "bucket",
+        "x": 1250,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "fd087965.ed17a8",
+        "type": "comment",
+        "z": "234e1af0.70eade",
+        "name": "Volume d'eau qui sort du sol par jour, Transpiré par la plante ou évaporé",
+        "info": "",
+        "x": 1120,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6f82bd46.4c774c",
+        "type": "ui_dropdown",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "",
+        "tooltip": "Ne fonctionne que en mode manuel",
+        "place": "Changer de phase en mode manuel",
+        "group": "2104039f.bb7a04",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "initiale",
+                "value": "initiale",
+                "type": "str"
+            },
+            {
+                "label": "développement",
+                "value": "développement",
+                "type": "str"
+            },
+            {
+                "label": "mi-saison",
+                "value": "mi-saison",
+                "type": "str"
+            },
+            {
+                "label": "maturation",
+                "value": "maturation",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 100,
+        "y": 580,
+        "wires": [
+            [
+                "ddbed1f6.87cd6"
+            ]
+        ]
+    },
+    {
+        "id": "ddbed1f6.87cd6",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "if(global.get(\"ModeControle\") === \"Manuel\"){\n    global.set(\"PhaseActuelle\", msg.payload);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set(\"PhaseActuelle\", \"initiale\");\nflow.set(\"ModeControle\", \"Manuel\" );",
+        "finalize": "",
+        "x": 300,
+        "y": 580,
+        "wires": [
+            [
+                "39d651d9.23001e"
+            ]
+        ]
+    },
+    {
+        "id": "8a3da3ac.41abc8",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "global.set(\"ModeControle\", msg.payload )\nnewMsg =  { \n    payload : {\n       ModeControle : global.get(\"ModeControle\"),\n    }\n};\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set(\"ModeControle\", \"Manuel\" )",
+        "finalize": "",
+        "x": 300,
+        "y": 460,
+        "wires": [
+            [
+                "2c87e76d.4d02f"
+            ]
+        ]
+    },
+    {
+        "id": "2c87e76d.4d02f",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "9c19d21e.cb7108",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "2104039f.bb7a04",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Manuel:",
+        "format": "Choisir phase",
+        "layout": "col-center",
+        "x": 100,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "dd0ab35d.512f8",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "2104039f.bb7a04",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Auto:",
+        "format": "Entrez valeurs degrés jour CUMULÉ pour chaque phase",
+        "layout": "col-center",
+        "x": 690,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "cc750ba0.6d6b18",
+        "type": "ui_form",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "Besoin moyen en degrés jour (°C) par phase",
+        "group": "2104039f.bb7a04",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Phase Initiale",
+                "value": "DJIni",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Phase développement",
+                "value": "DJDev",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Phase Mi-Saison",
+                "value": "DJMid",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Phase maturation",
+                "value": "DJLate",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Zéro de végétation",
+                "value": "Tbase",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "DJIni": "",
+            "DJDev": "",
+            "DJMid": "",
+            "DJLate": "",
+            "Tbase": ""
+        },
+        "payload": "",
+        "submit": "Valider",
+        "cancel": "",
+        "topic": "",
+        "x": 810,
+        "y": 500,
+        "wires": [
+            [
+                "eb3f3d69.2e767"
+            ]
+        ]
+    },
+    {
+        "id": "eb3f3d69.2e767",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "global.set(\"Tbase\",msg.payload.Tbase);\n\nglobal.set(\"DJIni\",msg.payload.DJIni);\nglobal.set(\"DJDev\",msg.payload.DJDev);\nglobal.set(\"DJMid\",msg.payload.DJMid);\nglobal.set(\"DJLate\",msg.payload.DJLate);\n\nnewMsg =  { \n    payload : {\n       Tbase : global.get(\"Tbase\"),\n       DJIni : global.get(\"DJIni\"),\n       DJDev : global.get(\"DJDev\"),\n       DJMid : global.get(\"DJMid\"),\n       DJLate : global.get(\"DJLate\")\n    }\n};\nreturn newMsg\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1100,
+        "y": 500,
+        "wires": [
+            [
+                "15b2dbb7.f420ec"
+            ]
+        ]
+    },
+    {
+        "id": "15b2dbb7.f420ec",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1270,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5e3cfa6e.a971c4",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "Toute les nuits",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "40 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 300,
+        "wires": [
+            [
+                "52020560.b654f4"
+            ]
+        ]
+    },
+    {
+        "id": "7f057d8a.154fcc",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "toutes les5 minutes",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 500,
+        "wires": [
+            [
+                "e8618b8e.d5ee88"
+            ]
+        ]
+    },
+    {
+        "id": "4c074c83.58c654",
+        "type": "ui_text",
+        "z": "10f53b23.1e4925",
+        "group": "2104039f.bb7a04",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Exemple pour le maïs:",
+        "format": "80; 40; 18; 22 et 6",
+        "layout": "col-center",
+        "x": 740,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "a4e93a9b.46e8f",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Choix arrosage : toutes les 15min entre 12h et 18h",
+        "info": "",
+        "x": 210,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b8b38483.883ac",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/15 12-17 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 620,
+        "wires": [
+            [
+                "bccfe3f8.b6002"
+            ]
+        ]
+    },
+    {
+        "id": "eedf57bf.bd377",
+        "type": "http request",
+        "z": "a478babd.688008",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.meteo-concept.com/api/forecast/daily?token=e97eb957ce2643059886da3f3b4c114f147949d6222e1da9c66035e539a643a7&insee=64445",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 450,
+        "y": 620,
+        "wires": [
+            [
+                "eb1c627b.e8ebd"
+            ]
+        ]
+    },
+    {
+        "id": "eb1c627b.e8ebd",
+        "type": "json",
+        "z": "a478babd.688008",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 590,
+        "y": 620,
+        "wires": [
+            [
+                "da5c0c70.5f225"
+            ]
+        ]
+    },
+    {
+        "id": "da5c0c70.5f225",
+        "type": "change",
+        "z": "a478babd.688008",
+        "name": "Get forecast",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.forecast",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 730,
+        "y": 620,
+        "wires": [
+            [
+                "c9249904.5c77d"
+            ]
+        ]
+    },
+    {
+        "id": "9a685dea.4268b8",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1090,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "bccfe3f8.b6002",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "Si sol un peut sec",
+        "func": "if (global.get(\"mainOnOff\")){\n    if ( flow.get(\"swi\") < 0.7){\n        return msg;\n    }\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 270,
+        "y": 620,
+        "wires": [
+            [
+                "eedf57bf.bd377"
+            ]
+        ]
+    },
+    {
+        "id": "c9249904.5c77d",
+        "type": "function",
+        "z": "a478babd.688008",
+        "name": "",
+        "func": "arrayPrevisionJours = msg.payload\nvar arroser = false;\nvar swi = flow.get(\"swi\");\nvar tabPrev = [\n    {\n        // Demain\n        proba : arrayPrevisionJours[1].probarain,\n        qtt : arrayPrevisionJours[1].rr10\n    },\n    {\n        // Après-Demain\n        proba : arrayPrevisionJours[2].probarain,\n        qtt : arrayPrevisionJours[2].rr10\n    },\n    {\n        // Après-Après-Demain\n        proba : arrayPrevisionJours[3].probarain,\n        qtt : arrayPrevisionJours[3].rr10\n    }\n];\nvar pluie1j;\nvar pluie2j;\nvar pluie3j;\n\nif (tabPrev[0].probarain > 50 ){\n    pluie1j = tabPrev[0].qtt;\n    pluie2j = tabPrev[0].qtt;\n    pluie3j = tabPrev[0].qtt;\n}\nif (tabPrev[1].probarain > 50 ){\n    pluie2j = pluie2j + tabPrev[1].qtt;\n    pluie3j = pluie3j + tabPrev[1].qtt;\n}\nif (tabPrev[2].probarain > 50 ){\n    pluie3j = pluie3j + tabPrev[2].qtt;\n}\n\nif (swi < 0.3){ //Danger pour la plante\n    if (pluie1j < 5){ // Si pluie peut importante\n        arroser = true;\n    }\n}else if (swi < 0.5){ \n    if (pluie2j < 5){ // Si pluie peut importante\n        arroser = true;\n    }\n}else{ \n    if (pluie3j < 5){ // Si pluie peut importante\n        arroser = true;\n    }\n}\n\nif (arroser){\n    var msgOn = { \n    payload : true\n    }\n    var msgOff = {\n        payload : false\n    }\n    return [msgOn,msgOff]\n}\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 880,
+        "y": 620,
+        "wires": [
+            [
+                "9a685dea.4268b8",
+                "9c1908a3.c44c18"
+            ],
+            [
+                "729400ce.afd62"
+            ]
+        ]
+    },
+    {
+        "id": "9c1908a3.c44c18",
+        "type": "mqtt out",
+        "z": "a478babd.688008",
+        "name": "",
+        "topic": "arroseur",
+        "qos": "",
+        "retain": "",
+        "broker": "1ebc10b2.05dd67",
+        "x": 1080,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "ca1ab1a8.5e308",
+        "type": "mqtt out",
+        "z": "a478babd.688008",
+        "name": "",
+        "topic": "arroseur",
+        "qos": "",
+        "retain": "",
+        "broker": "1ebc10b2.05dd67",
+        "x": 1180,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "729400ce.afd62",
+        "type": "delay",
+        "z": "a478babd.688008",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "minutes",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "x": 1040,
+        "y": 740,
+        "wires": [
+            [
+                "ca1ab1a8.5e308"
+            ]
+        ]
+    },
+    {
+        "id": "b4d577ad.e17598",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Allumer la pompe/ ouvrir la vanne",
+        "info": "",
+        "x": 1160,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "1d786774.526409",
+        "type": "comment",
+        "z": "a478babd.688008",
+        "name": "Après 5 min éteindre la pompe/ femer la vanne",
+        "info": "",
+        "x": 1160,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "16de2dd8.381b8a",
+        "type": "mqtt in",
+        "z": "84967456.67c8c8",
+        "name": "",
+        "topic": "arroseur",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "1ebc10b2.05dd67",
+        "x": 100,
+        "y": 480,
+        "wires": [
+            [
+                "9319d194.5cd1d8"
+            ]
+        ]
+    },
+    {
+        "id": "56c6dfae.9df208",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 890,
+        "y": 780,
+        "wires": [
+            [
+                "ca1ab1a8.5e308"
+            ]
+        ]
+    },
+    {
+        "id": "72338876.ee945",
+        "type": "inject",
+        "z": "a478babd.688008",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 890,
+        "y": 680,
+        "wires": [
+            [
+                "9c1908a3.c44c18"
+            ]
+        ]
+    },
+    {
+        "id": "9319d194.5cd1d8",
+        "type": "function",
+        "z": "84967456.67c8c8",
+        "name": "on turn OFF",
+        "func": "\nif (msg.payload === \"false\"){\n    \n    flow.set(\"hummidité\" , flow.get(\"hummidité\") + 5);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 250,
+        "y": 480,
+        "wires": [
+            [
+                "e65a9220.1c97d"
+            ]
+        ]
+    },
+    {
+        "id": "3d9c3ff.0f6ecc",
+        "type": "function",
+        "z": "84967456.67c8c8",
+        "name": "1/2 chance of Soil hummidity to decrease",
+        "func": "if ( Math.random() < 0.5){\n    flow.set(\"hummidité\" , flow.get(\"hummidité\") -1);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b846a0d.0996ec",
+        "type": "inject",
+        "z": "84967456.67c8c8",
+        "name": "Every 30min between 8am and 6pm",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "*/30 8-17 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 620,
+        "wires": [
+            [
+                "3d9c3ff.0f6ecc"
+            ]
+        ]
+    },
+    {
+        "id": "cfb0c15a.fe9718",
+        "type": "ui_date_picker",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "label": "Date de plantation",
+        "group": "9908e853.44dc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "topic": "",
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "33700b12.93819c"
+            ]
+        ]
+    },
+    {
+        "id": "939a2068.dbec98",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b85dfbe0.3fd548",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "les variables",
+        "func": "newMsg =  { \n    payload : {\n        mainOnOff : global.get(\"mainOnOff\"),\n        ModeControle : global.get(\"ModeControle\"),\n        PhaseActuelle : global.get(\"PhaseActuelle\"),\n        datePlantation : global.get(\"datePlantation\"),\n\n        wp : global.get(\"wp\"),\n        fc : global.get(\"fc\"),\n        p : global.get(\"p\"),\n        \n        KcIni : global.get(\"KcIni\"),\n        KcDev : global.get(\"KcDev\"),\n        KcMid : global.get(\"KcMid\"),\n        KcLate : global.get(\"KcLate\"),  \n        \n        \n        Tbase : global.get(\"Tbase\"),\n        DJIni : global.get(\"DJIni\"),\n        DJDev : global.get(\"DJDev\"),\n        DJMid : global.get(\"DJMid\"),\n        DJLate : global.get(\"DJLate\")\n    }\n};\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 40,
+        "wires": [
+            [
+                "a02dde88.7695b"
+            ]
+        ]
+    },
+    {
+        "id": "a02dde88.7695b",
+        "type": "debug",
+        "z": "10f53b23.1e4925",
+        "name": "globales",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1300,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "e56a3d17.70a1d8",
+        "type": "inject",
+        "z": "10f53b23.1e4925",
+        "name": "Tester",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1010,
+        "y": 40,
+        "wires": [
+            [
+                "b85dfbe0.3fd548"
+            ]
+        ]
+    },
+    {
+        "id": "33700b12.93819c",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "func": "global.set(\"datePlantation\",msg.payload)\nnewMsg =  { \n    payload : {\n        mainOnOff : global.get(\"datePlantation\"),\n    }\n};\nreturn newMsg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "939a2068.dbec98"
+            ]
+        ]
+    },
+    {
+        "id": "77baa986.9cbf58",
+        "type": "debug",
+        "z": "a478babd.688008",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "17fbcbc0.1bf544",
+        "type": "http request",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.meteo-concept.com/api/forecast/daily?token=e97eb957ce2643059886da3f3b4c114f147949d6222e1da9c66035e539a643a7&insee=64445",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 270,
+        "y": 560,
+        "wires": [
+            [
+                "e57bc6c6.e13a9"
+            ]
+        ]
+    },
+    {
+        "id": "e57bc6c6.e13a9",
+        "type": "json",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 560,
+        "wires": [
+            [
+                "7a1b42c9.7f4bac"
+            ]
+        ]
+    },
+    {
+        "id": "4f319d5f.07d17c",
+        "type": "debug",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a40e2cc7.8dba58",
+        "type": "inject",
+        "z": "234e1af0.70eade",
+        "name": "debug",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 560,
+        "wires": [
+            [
+                "17fbcbc0.1bf544"
+            ]
+        ]
+    },
+    {
+        "id": "eab1003b.dba3c8",
+        "type": "inject",
+        "z": "10f53b23.1e4925",
+        "name": "Toute les nuits",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "30 00 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 740,
+        "wires": [
+            [
+                "8c43c19a.8827f8"
+            ]
+        ]
+    },
+    {
+        "id": "70c6907f.c61de",
+        "type": "comment",
+        "z": "10f53b23.1e4925",
+        "name": "Calcul Phasse actuelle",
+        "info": "",
+        "x": 140,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "8c43c19a.8827f8",
+        "type": "function",
+        "z": "10f53b23.1e4925",
+        "name": "Choisir phase actuel si auto",
+        "func": "if (global.get(\"mainOnOff\")){\n    if (global.get(\"ModeControle\") == \"Auto\" ){\n        \n        var CumulDJ = global.get(\"TotDJ\");\n        var DJIni = global.get(\"DJIni\");\n        var DJDev = global.get(\"DJDev\");\n        var DJMid = global.get(\"DJMid\");\n        var DJLate = global.get(\"DJLate\");\n    \n        if (CumulDJ < DJIni ){\n            global.set(\"PhaseActuelle\", \"initiale\");\n        }else if(CumulDJ < DJIni + DJDev ){\n            global.set(\"PhaseActuelle\", \"développement\" );\n        }else if(CumulDJ < DJIni + DJDev + DJMid ){\n            global.set(\"PhaseActuelle\", \"mi-saison\" );\n        }else if(CumulDJ < DJIni + DJDev + DJMid + DJLate ){\n            global.set(\"PhaseActuelle\", \"maturation\" );\n        }\n    }\n    \nlet PhaseActuelle = global.get(\"PhaseActuelle\");\nnewMsg =  { \n    payload : { PhaseActuelle  }\n};\nreturn newMsg\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is deployed.\nglobal.set( \"PhaseActuelle\", \"Ini\")",
+        "finalize": "",
+        "x": 360,
+        "y": 740,
+        "wires": [
+            [
+                "1dff4f07.1a6471"
+            ]
+        ]
+    },
+    {
+        "id": "1dff4f07.1a6471",
+        "type": "change",
+        "z": "10f53b23.1e4925",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.PhaseActuelle",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "39d651d9.23001e"
+            ]
+        ]
+    },
+    {
+        "id": "7a1b42c9.7f4bac",
+        "type": "change",
+        "z": "234e1af0.70eade",
+        "name": "Get forecast",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.forecast",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "4f319d5f.07d17c",
+                "fca6b57e.99f7e8"
+            ]
+        ]
+    },
+    {
+        "id": "6a7da6b9.8846c",
+        "type": "debug",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "3b002d37.14feda",
+        "type": "ui_text",
+        "z": "234e1af0.70eade",
+        "group": "9908e853.44dc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Date Mi-saison",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1120,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "74fa6a60.7ea154",
+        "type": "ui_text",
+        "z": "234e1af0.70eade",
+        "group": "9908e853.44dc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Date Maturation",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1120,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "fca6b57e.99f7e8",
+        "type": "function",
+        "z": "234e1af0.70eade",
+        "name": "produit Date Mi-saison et Maturation",
+        "func": "let forecast = msg.payload;\nlet tmin = forecast.map( x => x.tmin);\nlet tmax = forecast.map( x => x.tmax);\nlet dj = [];\nlet cdj = [];\n\nlet djTot = global.get(\"TotDJ\");\nlet DJMid = global.get(\"DJMid\");\nlet DJLate = global.get(\"DJLate\");\nlet cumuldj = djTot;\n\nvar today= new Date();\nlet dateMi = new Date();\ndateMi = null\nlet dateMat = new Date();\ndateMat = null\n\nlet StringDateMi = \"Dans plus de 14 jours\";\nlet StringDateMat = \"Dans plus de 14 jours\";\n\nif (cumuldj >= DJMid){\n    dateMi = new Date(today.setDate(today.getDate()-1));\n    StringDateMi = \"Passé\"\n}\nif (cumuldj >= DJLate){\n    dateMat = new Date(today.setDate(today.getDate()-1));\n    StringDateMat = \"Passé\"\n}\nfor (i = 0; i < 14; i++) {\n    var DJ = ( (tmin[i] + tmax[i])/2 ) - global.get(\"Tbase\");\n    if (DJ > 30){DJ=30;}\n    if (DJ < 0){DJ = 0;}\n    dj[i] = DJ;\n    cumuldj += DJ;\n    cdj[i] = cumuldj;\n    \n    if (dateMi !== null && cumuldj >= DJMid){\n        dateMi = new Date(today.setDate(today.getDate()+i));\n    }\n    if (dateMat !== null && cumuldj >= DJLate){\n        dateMat = new Date(today.setDate(today.getDate()+i));\n    }\n} \nif ( dateMi !== null && StringDateMi ===\"Dans plus de 14 jours\"){\n    let month = dateMi.getUTCMonth() + 1; //months from 1-12\n    let day = dateMi.getUTCDate();\n    let year = dateMi.getUTCFullYear();\n    StringDateMi = day + \" / \" + month + \" / \" + year;\n}\nif ( dateMat !== null && StringDateMat ===\"Dans plus de 14 jours\"){\n    let month = dateMat.getUTCMonth() + 1; //months from 1-12\n    let day = dateMat.getUTCDate();\n    let year = dateMat.getUTCFullYear();\n    StringDateMat = day + \" / \" + month + \" / \" + year;\n}\n\n\n\n\nvar msgMi ={\n    payload :StringDateMi\n}\nvar msgMat ={\n    payload : StringDateMat\n}\nvar newMsg = { \n    payload : {\n        \"dj\" : dj,\n        \"cdj\" : cdj,\n        \"dateMi\" :dateMi,\n        \"StringDateMi\" : StringDateMi ,\n        \"dateMat\" : dateMat,\n        \"StringDateMat\" : StringDateMat,\n    }\n}\nreturn [newMsg , msgMi, msgMat]\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 810,
+        "y": 560,
+        "wires": [
+            [
+                "6a7da6b9.8846c"
+            ],
+            [
+                "3b002d37.14feda"
+            ],
+            [
+                "74fa6a60.7ea154"
+            ]
+        ]
     }
 ]
