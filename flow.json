@@ -1927,7 +1927,7 @@
         "type": "function",
         "z": "234e1af0.70eade",
         "name": "calcul Etr",
-        "func": "var ks = global.get(\"latestKs\");\nvar Etm = msg.payload\nvar Etr = ks * Etm;\nEtr = 10\n\nvar newMsg = { \n    payload : Etr ,\n    measurement : \"Etr\"\n    \n}\nreturn newMsg",
+        "func": "var ks = global.get(\"latestKs\");\nvar Etm = msg.payload\nvar Etr = ks * Etm;\n\n\nvar newMsg = { \n    payload : Etr ,\n    measurement : \"Etr\"\n    \n}\nreturn newMsg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
