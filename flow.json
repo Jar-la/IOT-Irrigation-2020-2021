@@ -678,7 +678,7 @@
         "submit": "Valider",
         "cancel": "",
         "topic": "",
-        "x": 510,
+        "x": 290,
         "y": 300,
         "wires": [
             [
@@ -772,7 +772,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 700,
+        "x": 480,
         "y": 300,
         "wires": [
             [
@@ -793,7 +793,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
+        "x": 650,
         "y": 300,
         "wires": []
     },
@@ -827,7 +827,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 710,
+        "x": 490,
         "y": 260,
         "wires": []
     },
@@ -843,7 +843,7 @@
         "label": "Exemple:",
         "format": "Point de flétrissement:20  Capacité au champ:80",
         "layout": "col-center",
-        "x": 480,
+        "x": 260,
         "y": 340,
         "wires": []
     },
@@ -873,7 +873,7 @@
         "z": "10f53b23.1e4925",
         "name": "Configuration Sol ",
         "info": "",
-        "x": 500,
+        "x": 280,
         "y": 240,
         "wires": []
     },
@@ -1117,7 +1117,7 @@
         "type": "debug",
         "z": "a478babd.688008",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1134,7 +1134,7 @@
         "type": "debug",
         "z": "a478babd.688008",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1365,7 +1365,8 @@
         "wires": [
             [
                 "b278bd9a.7470a8",
-                "b83ac1a6.2a2cf"
+                "b83ac1a6.2a2cf",
+                "b314aa1d.86734"
             ]
         ]
     },
@@ -1474,7 +1475,8 @@
         "y": 60,
         "wires": [
             [
-                "bb510e1d.3581d8"
+                "bb510e1d.3581d8",
+                "9a36d8e3.46d8b"
             ]
         ]
     },
@@ -1925,7 +1927,7 @@
         "type": "function",
         "z": "234e1af0.70eade",
         "name": "calcul Etr",
-        "func": "var ks = global.get(\"latestKs\");\nvar Etm = msg.payload\nvar Etr = ks * Etm;\n\nvar newMsg = { \n    payload : Etr ,\n    measurement : \"Etr\"\n    \n}\nreturn newMsg",
+        "func": "var ks = global.get(\"latestKs\");\nvar Etm = msg.payload\nvar Etr = ks * Etm;\nEtr = 10\n\nvar newMsg = { \n    payload : Etr ,\n    measurement : \"Etr\"\n    \n}\nreturn newMsg",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2569,8 +2571,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 890,
-        "y": 780,
+        "x": 870,
+        "y": 740,
         "wires": [
             [
                 "ca1ab1a8.5e308"
@@ -2694,7 +2696,7 @@
         "type": "debug",
         "z": "10f53b23.1e4925",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2715,8 +2717,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1150,
-        "y": 40,
+        "x": 1090,
+        "y": 280,
         "wires": [
             [
                 "a02dde88.7695b"
@@ -2736,8 +2738,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
-        "y": 40,
+        "x": 1240,
+        "y": 280,
         "wires": []
     },
     {
@@ -2761,8 +2763,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1010,
-        "y": 40,
+        "x": 950,
+        "y": 280,
         "wires": [
             [
                 "b85dfbe0.3fd548"
@@ -3002,7 +3004,7 @@
         "type": "debug",
         "z": "234e1af0.70eade",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -3069,5 +3071,67 @@
                 "74fa6a60.7ea154"
             ]
         ]
+    },
+    {
+        "id": "803dd4d8.5a8118",
+        "type": "inject",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 60,
+        "wires": [
+            [
+                "d313dddb.d40f68"
+            ]
+        ]
+    },
+    {
+        "id": "9a36d8e3.46d8b",
+        "type": "debug",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "b314aa1d.86734",
+        "type": "debug",
+        "z": "234e1af0.70eade",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 80,
+        "wires": []
     }
 ]
